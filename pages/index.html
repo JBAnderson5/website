@@ -19,7 +19,7 @@ var email="jbanderson@scu.edu";
     <title>JB Anderson Resume</title>
     <meta name="author" content="JB Anderson">
     <meta name="description" content="My online resume">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
     <!--links to css scripts-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -41,29 +41,35 @@ var email="jbanderson@scu.edu";
     <header id="home">
 
       <!--navigation bar-->
-      <nav id="nav-wrap" class="navbar nav-expand-sm bg-dark">
+      <nav id="nav-wrap" class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-<!--make mobile navigation button later
-         <a class="button" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="button" href="#" title="Hide navigation">Hide navigation</a>
--->
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Logo</a>
 
-         <ul id="nav" class="navbar-nav">
-            <li class="current" class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-	          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#organizations">Organizations</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
+        <!--mobile navigation button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+          <ul id="nav" class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+	            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#organizations">Organizations</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul> <!-- end #nav -->
+        </div>
 
       </nav> <!-- end #nav-wrap -->
 
 
       <!--home page section
       -->
-      <div class="row">
-        <img class= "img-fluid" width="100%"; src="Sunset.JPG" alt="sunset">
+      <div class="container-fluid bg-dark">
+        <img class= "img img-fluid"  src="Sunset.JPG" alt="sunset">
         <div class="caption">
           <h1 class="responsive-headline">JB Anderson</h1>
           <h3>
@@ -91,7 +97,7 @@ var email="jbanderson@scu.edu";
     </header>
 
     <section id="about">
-      <div class="row">
+      <div class="container-fluid">
         <div class="col-3">
           <img class="profile-pic" src="profilepic.jpg" alt="profile pic">
         </div>
