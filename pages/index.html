@@ -22,11 +22,16 @@ var email="jbanderson@scu.edu";
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!--links to css scripts-->
-    <link href="stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="moreStyle.css" rel="stylesheet">
 
     <!--link to my resume data-->
     <script type="text/javascript" src="resumeData.js"></script>
+
+    <!--links to javascript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
   </head>
 
@@ -36,18 +41,20 @@ var email="jbanderson@scu.edu";
     <header id="home">
 
       <!--navigation bar-->
-      <nav id="NAVBAR_NAV">
+      <nav id="nav-wrap" class="navbar nav-expand-sm bg-dark">
 
-         <a class="NAVBAR_TOGGLER" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="NAVBAR_TOGGLER" href="#" title="Hide navigation">Hide navigation</a>
+<!--make mobile navigation button later
+         <a class="button" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="button" href="#" title="Hide navigation">Hide navigation</a>
+-->
 
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	          <li><a class="smoothscroll" href="#education">Education</a></li>
-            <li><a class="smoothscroll" href="#projects">Projects</a></li>
-            <li><a class="smoothscroll" href="#organizations">Organizations</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         <ul id="nav" class="navbar-nav">
+            <li class="current" class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+	          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#organizations">Organizations</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -85,15 +92,15 @@ var email="jbanderson@scu.edu";
 
     <section id="about">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-3">
           <img class="profile-pic" src="profilepic.jpg" alt="profile pic">
         </div>
 
-        <div class="col-sm-9">
+        <div class="col-9">
           <h2>About me</h2>
             <p> a bunch of stuff about me</p>
 
-            <div class="col-sm-3">
+            <div class="col-3">
 
                   <h2>Contact Details</h2>
                   <p class="address">
@@ -111,7 +118,7 @@ var email="jbanderson@scu.edu";
 
                </div>
 
-               <div class="col-sm-3">
+               <div class="col-3">
                   <p>
                      <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
                   </p>
@@ -123,9 +130,7 @@ var email="jbanderson@scu.edu";
     </section>
 
 
-    <!--links to javascript files-->
-    <script src="stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+
 
   </body>
 
