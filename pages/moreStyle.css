@@ -11,3 +11,24 @@
 .homeImage{
 z-index: 0;
 }
+
+/*dynamically sizes my name heading not working so fix this*/
+.name{
+  font-size: 5rem;
+}
+@include media-breakpoint-up(sm) {
+  .name {
+    font-size: 3rem;
+  }
+}
+@include media-breakpoint-up(md) {
+  .name {
+    font-size: 5rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .name {
+    font-size: 8rem;
+  }
+}
