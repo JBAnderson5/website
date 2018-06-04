@@ -13,6 +13,9 @@
     <!--links to css scripts-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
 
+    <!--link to my resume data-->
+    <script type="text/javascript" src="http://josephbanderson.com.s3-website-us-west-1.amazonaws.com/resume/resumeData.js"></script>
+
   </head>
 
   <body>
@@ -44,7 +47,7 @@
         <div class="banner-text">
           <h1 class="responsive-headline">JB Anderson</h1>
           <h3>
-              <script id ="homepageBlurb" src="resumeData.js"></script>
+              <script> document.write(homepageBlurb);</script>
           </h3>
             <hr />
           <ul class="social">
