@@ -1,8 +1,13 @@
-.caption{
-  position: absolute;
-  top:30%;
-  left:10%;
+/* styles the caption for the homepage*/
+.homeCaption{
+  z-index:1;
+  position:absolute;
+  right:10%;
   width:80%;
+  top:20%;
 }
 
- 
+/*styles the caption for the home image*/
+.homeImage{
+z-index: 0;
+}
