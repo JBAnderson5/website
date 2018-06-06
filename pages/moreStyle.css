@@ -2,33 +2,57 @@
 .homeCaption{
   z-index:1;
   position:absolute;
-  right:20%;
-  width:60%;
-  top:20%;
+  right:10%;
+  width:80%;
+  top:7%;
 }
 
-/*styles the caption for the home image*/
+/*styles the home image*/
 .homeImage{
 z-index: 0;
 }
 
 /*dynamically sizes my name heading not working so fix this*/
 .name{
-  font-size: 5rem;
-}
-@include media-breakpoint-up(sm) {
-  .name {
-    font-size: 3rem;
-  }
-}
-@include media-breakpoint-up(md) {
-  .name {
-    font-size: 5rem;
-  }
+  font-size: 30px;
+
 }
 
-@include media-breakpoint-up(lg) {
-  .name {
-    font-size: 8rem;
+/*styles the text on the home section*/
+.homepageBlurb{
+  font-size: 15px;
+}
+
+
+@media only screen and (min-width: 600px ) {
+  .name{
+  font-size: 50px;
+  }
+  .homepageBlurb{
+    font-size: 20px;
+  }
+  .homeCaption{
+    right:20%;
+    width:60%;
+    top:10%;
+  }
+}
+@media only screen and (min-width:  800px) {
+  .name{
+  font-size: 70px;
+  }
+
+  .homeCaption{
+    right:20%;
+    width:60%;
+    top:20%;
+  }
+}
+@media only screen and (min-width:  1000px) {
+  .name{
+  font-size: 90px;
+  }
+  .homeCaption{
+    top:25%;
   }
 }
